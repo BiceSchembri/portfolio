@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/style.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="style/style.css" type="text/css" rel="stylesheet" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./script.js" defer></script>
     <title>Portfolio - Beatrice Schembri</title>
@@ -36,20 +36,18 @@
     <main>
 
         <section id="hero" class="flex p-8 justify-center items-center">
-            <div class="uppercase my-4 flex-column md-items-start">
-                <div class="">
-                    <h1 class="font-bold text-emerald-400 text-4xl tracking-wide">Beatrice Schembri</h1>
-                    <p class="text-2xl text-emerald-100 tracking-wide mt-2">Junior Web Developer</p>
-                </div>
-                <div class="mt-10">
-                    <a href="pdf/CV_Beatrice-Schembri_2023.pdf" download="CV_Beatrice-Schembri"
-                        class="bg-white hover:bg-emerald-400 text-sky-900 font-bold py-1 px-4 mx-4 rounded-full">CV</a>
+            <div class="w-2/3 md:w-1/2">
+                <h1 class="font-bold text-emerald-400 text-5xl tracking-wide">Beatrice Schembri</h1>
+                <p class="text-3xl text-slate-50 tracking-wide mt-4 uppercase">Junior Web Developer</p>
+                <div class="flex mt-10">
                     <a href="mailto:beatrice.schembri@gmail.com"
-                        class="bg-white hover:bg-emerald-400 text-sky-900 font-bold py-1 px-4 mx-4 rounded-full">email</a>
+                        class="bg-amber-200 hover:bg-amber-400 text-emerald-900 font-bold py-1 px-4 mx-4 rounded-full">email</a>
+                    <a href="pdf/CV_Beatrice-Schembri_2023.pdf" download="CV_Beatrice-Schembri"
+                        class="bg-amber-200 hover:bg-amber-400 text-emerald-900 font-bold py-1 px-4 mx-4 rounded-full">cv</a>
                 </div>
             </div>
-            <div>
-                <img src="./assets/tiles.jpg" width="50%">
+            <div class="h-full w-32 md:w-64 overflow-hidden">
+                <img src="./assets/tiles.jpg" alt="Portuguese Tiles" class="h-full w-full object-cover">
             </div>
         </section>
 
@@ -97,7 +95,13 @@
     </main>
 
     <footer class="p-2 md:p-4 bg-emerald-400">
-        <p>Copyright</p>
+        <p>
+            &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            - Beatrice Schembri
+        </p>
         <nav>Secondary navigation</nav>
         <div>Credits:
             <div> Mail icon made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a
