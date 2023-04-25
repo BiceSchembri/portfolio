@@ -5,36 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="style/style.css" type="text/css" rel="stylesheet" /> -->
+    <link href="style/style.css" type="text/css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./script.js" defer></script>
     <title>Portfolio - Beatrice Schembri</title>
 </head>
 
 <body class="bg-sky-950 text-slate-50">
-    <!-- <header class="bg-emerald-800">
-        <nav class="bg-sky-950 uppercase font-bold">
-            <a href="#about" class="hover:text-red-500">About</a>
-            <a href="#projects">Projects</a>
-            <a href="https://github.com/BiceSchembri"><img alt="GitHub" src="./assets/github-mark/github-mark-white.png"
-                    width="80px"></a>
-            <a href="https://www.linkedin.com/in/beatrice-schembri-3a0a1077/"><img alt="LinkedIn"
-                    src="./assets/LinkedIn-Logos/LI-In-Bug.png" width="80px"></a>
-        </nav>
-    </header> -->
+
     <header>
         <nav class="flex items-end justify-center md:justify-end uppercase font-bold p-2 md:p-4">
-            <div>
-                <a href="#about" class="px-4 py-2 hover:text-emerald-300">About</a>
-                <a href="#projects" class="px-4 py-2 hover:text-emerald-300">Projects</a>
+            <div class="flex items-end md:justify-end ">
+                <a href="#about" class="px-4 py-2 hover:text-emerald-300 transition duration-300 ease-in-out">About</a>
+                <a href="#projects"
+                    class="px-4 py-2 hover:text-emerald-300 transition duration-300 ease-in-out">Projects</a>
             </div>
-            <div>
+            <div class="flex items-end md:justify-end ">
                 <a href="https://github.com/BiceSchembri" target="_blank" rel="noopener noreferrer"
-                    class="px-4 py-2 hover:opacity-80">
+                    class="px-4 py-2 hover:opacity-80 transition duration-300 ease-in-out">
                     <img alt="GitHub" src="./assets/github-mark/github-mark-white.png" class="w-8 h-8 object-contain">
                 </a>
                 <a href="https://www.linkedin.com/in/beatrice-schembri-3a0a1077/" target="_blank"
-                    rel="noopener noreferrer" class="px-4 py-2 hover:opacity-80">
+                    rel="noopener noreferrer" class="px-4 py-2 hover:opacity-80 transition duration-300 ease-in-out">
                     <img alt="LinkedIn" src="./assets/LinkedIn-Logos/LI-In-Bug.png" class="w-8 h-8 object-contain">
                 </a>
             </div>
@@ -42,55 +34,78 @@
     </header>
 
     <main>
-        <div id="hero" class="uppercase">
-            <h1>Beatrice Schembri</h1>
-            <p>Junior Web Developer</p>
-            <a href="pdf/CV_Beatrice-Schembri_2023.pdf" download="CV_Beatrice-Schembri">curriculum vitae</a>
-            <p><a href="mailto:beatrice.schembri@gmail.com">mail</a></p>
-        </div>
-        <section id="about">
-            <h2>About</h2>
-            <div id="intro">
-                <p>Hi there!</p>
-                <p> I am a trainee at BeCode Gent, about to complete a Junior Web Developer course with a focus on
-                    Backend.</p>
-                <p>Over the last ten years I have lived in six different countries and worked in a variety of jobs,
-                    mostly in the customer service and clerical area. something something about changes, challenges,
-                    adaptability and good communication skills</p>
-                <p>Reasons why code</p>
+
+        <section id="hero" class="flex p-8 justify-center items-center">
+            <div class="uppercase my-4 flex-column md-items-start">
+                <div class="">
+                    <h1 class="font-bold text-emerald-400 text-4xl tracking-wide">Beatrice Schembri</h1>
+                    <p class="text-2xl text-emerald-100 tracking-wide mt-2">Junior Web Developer</p>
+                </div>
+                <div class="mt-10">
+                    <a href="pdf/CV_Beatrice-Schembri_2023.pdf" download="CV_Beatrice-Schembri"
+                        class="bg-white hover:bg-emerald-400 text-sky-900 font-bold py-1 px-4 mx-4 rounded-full">CV</a>
+                    <a href="mailto:beatrice.schembri@gmail.com"
+                        class="bg-white hover:bg-emerald-400 text-sky-900 font-bold py-1 px-4 mx-4 rounded-full">email</a>
+                </div>
             </div>
-            <div id="skills">
-                <h3>Technical skills</h3>
-                <ul>
-                    <li>HTML, HTML5</li>
-                    <li>CSS, Sass</li>
-                    <li>JavaScript, Node.js, Express.js</li>
-                    <li>PHP, Laravel</li>
-                    <li>Git, GitHub</li>
-                    <li>MySQL, HeidiSQL</li>
-                    <li>REST APIs</li>
-                    <li>MVC pattern</li>
-                </ul>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
             <div>
-                <h3>JavaScript Games</h3>
-                <img>
-                <a href="https://github.com/BiceSchembri/javascript-games">visit here</a>
-                <p>Simple games: guessing a random number; rock-paper-scissors.</p>
-                <p>Languages: JavaScript, HTML, CSS</p>
+                <img src="./assets/tiles.jpg" width="50%">
             </div>
         </section>
-        <!-- <section>
-            <h2>Extra</h2>
-            <div>TDM articles, CICAP articles, presentation?</div>
-        </section> -->
+
+        <section id="about" class="flex p-8 justify-center items-center">
+            <div class="bg-sky-700 rounded-md p-3">
+                <h2>About</h2>
+                <div id="intro">
+                    <p>Hi there!</p>
+                    <p> I am a trainee at BeCode Gent, on my way to complete an intensive Junior Web Developer course
+                        with a focus on Backend.</p>
+                    <p>Over the last ten years I have lived in six different countries and worked in a variety of jobs,
+                        from customer service to library assistant. In 2020 I was hired to translate a SaaS app -
+                        that was my first brush with coding. A few years later it was time for me to learn new skills,
+                        and I knew which direction to take.</p>
+                </div>
+                <div id="skills">
+                    <h3 class="uppercase font-semibold">Technical skills</h3>
+                    <ul>
+                        <li>HTML, HTML5</li>
+                        <li>CSS, Sass</li>
+                        <li>JavaScript, Node.js, Express.js</li>
+                        <li>PHP, Laravel</li>
+                        <li>Git, GitHub</li>
+                        <li>MySQL, HeidiSQL</li>
+                        <li>REST APIs</li>
+                        <li>MVC pattern</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="flex p-8 justify-center items-center">
+            <div class="bg-sky-700 rounded-md p-3">
+                <h2>Projects</h2>
+                <div>
+                    <h3>JavaScript Games</h3>
+                    <img>
+                    <a href="https://github.com/BiceSchembri/javascript-games">visit here</a>
+                    <p>Simple games: guessing a random number; rock-paper-scissors.</p>
+                    <p>Languages: JavaScript, HTML, CSS</p>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
+
+    <footer class="p-2 md:p-4 bg-emerald-400">
         <p>Copyright</p>
         <nav>Secondary navigation</nav>
+        <div>Credits:
+            <div> Mail icon made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div> CV icon made by <a href="https://www.flaticon.com/authors/spacemandesign" title="spaceman.design">
+                    spaceman.design </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+        </div>
     </footer>
 </body>
 
