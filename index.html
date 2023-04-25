@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="style/style.css" type="text/css" rel="stylesheet" /> -->
+    <link rel="icon" href="./assets/portfolio.png" type="image/icon type">
+    <link href="style/style.css" type="text/css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./script.js" defer></script>
     <title>Portfolio - Beatrice Schembri</title>
@@ -17,6 +18,8 @@
         <nav class="flex items-end justify-center md:justify-end uppercase font-bold p-2 md:p-4">
             <div class="flex items-end md:justify-end ">
                 <a href="#about" class="px-4 py-2 hover:text-emerald-300 transition duration-300 ease-in-out">About</a>
+                <a href="#skills"
+                    class="px-4 py-2 hover:text-emerald-300 transition duration-300 ease-in-out">Skills</a>
                 <a href="#projects"
                     class="px-4 py-2 hover:text-emerald-300 transition duration-300 ease-in-out">Projects</a>
             </div>
@@ -36,25 +39,26 @@
     <main>
 
         <section id="hero" class="flex p-8 justify-center items-center">
-            <div class="w-2/3 md:w-1/2">
-                <h1 class="font-bold text-emerald-400 text-5xl tracking-wide">Beatrice Schembri</h1>
+            <div class="p-3 flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-bold text-emerald-400 tracking-wide">Beatrice Schembri</h1>
                 <p class="text-3xl text-slate-50 tracking-wide mt-4 uppercase">Junior Web Developer</p>
-                <div class="flex mt-10">
+                <div class="mt-10">
                     <a href="mailto:beatrice.schembri@gmail.com"
                         class="bg-amber-200 hover:bg-amber-400 text-emerald-900 font-bold py-1 px-4 mx-4 rounded-full">email</a>
                     <a href="pdf/CV_Beatrice-Schembri_2023.pdf" download="CV_Beatrice-Schembri"
                         class="bg-amber-200 hover:bg-amber-400 text-emerald-900 font-bold py-1 px-4 mx-4 rounded-full">cv</a>
                 </div>
             </div>
-            <div class="h-full w-32 md:w-64 overflow-hidden">
-                <img src="./assets/tiles.jpg" alt="Portuguese Tiles" class="h-full w-full object-cover">
-            </div>
         </section>
 
-        <section id="about" class="flex p-8 justify-center items-center">
-            <div class="bg-sky-700 rounded-md p-3">
-                <h2>About</h2>
-                <div id="intro">
+        <button onclick="topFunction()" id="backToTopButton" title="Go to top"
+            class="bg-emerald-300 font-sky-900 uppercase font-bold hover:bg-emerald-400 px-4 py-2 rounded full">Top</button>
+
+        <div class="flex flex-col">
+
+            <section id="about" class="flex p-3 justify-center items-center">
+                <div class="bg-sky-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 flex flex-col">
+                    <h2 class="uppercase font-semibold text-2xl">About</h2>
                     <p>Hi there!</p>
                     <p> I am a trainee at BeCode Gent, on my way to complete an intensive Junior Web Developer course
                         with a focus on Backend.</p>
@@ -63,8 +67,11 @@
                         that was my first brush with coding. A few years later it was time for me to learn new skills,
                         and I knew which direction to take.</p>
                 </div>
-                <div id="skills">
-                    <h3 class="uppercase font-semibold">Technical skills</h3>
+            </section>
+
+            <section id="skills" class="flex p-3 justify-center items-center">
+                <div class="bg-sky-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 flex flex-col">
+                    <h2 class="uppercase font-semibold text-2xl">Skills</h2>
                     <ul>
                         <li>HTML, HTML5</li>
                         <li>CSS, Sass</li>
@@ -76,21 +83,22 @@
                         <li>MVC pattern</li>
                     </ul>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="projects" class="flex p-8 justify-center items-center">
-            <div class="bg-sky-700 rounded-md p-3">
-                <h2>Projects</h2>
-                <div>
-                    <h3>JavaScript Games</h3>
-                    <img>
-                    <a href="https://github.com/BiceSchembri/javascript-games">visit here</a>
-                    <p>Simple games: guessing a random number; rock-paper-scissors.</p>
-                    <p>Languages: JavaScript, HTML, CSS</p>
+            <section id="projects" class="flex p-3 justify-center items-center">
+                <div class="bg-sky-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 h-full sm:h-auto flex flex-col">
+                    <h2 class="uppercase font-semibold text-2xl">Projects</h2>
+                    <div class="flex-grow">
+                        <h3>JavaScript Games</h3>
+                        <img>
+                        <a href="https://github.com/BiceSchembri/javascript-games">visit here</a>
+                        <p>Simple games: guessing a random number; rock-paper-scissors.</p>
+                        <p>Languages: JavaScript, HTML, CSS</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        </div>
 
     </main>
 
@@ -102,13 +110,12 @@
             </script>
             - Beatrice Schembri
         </p>
-        <nav>Secondary navigation</nav>
-        <div>Credits:
-            <div> Mail icon made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a
-                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            <div> CV icon made by <a href="https://www.flaticon.com/authors/spacemandesign" title="spaceman.design">
-                    spaceman.design </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            </div>
+        <a href="https://www.flaticon.com/free-icons/portfolio" title="portfolio icons">Portfolio icons created by
+            Smashicons - Flaticon</a>
+        <div> Mail icon made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> (<a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>)</div>
+        <div> CV icon made by <a href="https://www.flaticon.com/authors/spacemandesign" title="spaceman.design">
+                spaceman.design </a> (<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>)
         </div>
     </footer>
 </body>
