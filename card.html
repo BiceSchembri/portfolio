@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0px 0px 10px #ddd;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .card-link {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .card-image-carousel {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-gap: 10px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .card {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .card-image-carousel {
+                order: -1;
+            }
+
+            .card-text {
+                margin: 0;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-image-carousel">
+                <img src="...">
+                <img src="...">
+                <img src="...">
+            </div>
+            <div>
+                <h2 class="card-title">Card Title</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod consectetur
+                    arcu, vitae aliquet velit pellentesque ac. Nulla facilisi. Duis vel nisl tristique, mollis magna in,
+                    mattis elit. Aliquam non ante ante. </p>
+                <a class="card-link" href="#">Link 1</a>
+                <a class="card-link" href="#">Link 2</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image-carousel">
+                <img src="image4.jpg">
+                <img src="image5.jpg">
+                <img src="image6.jpg">
+            </div>
+            <div>
+                <h2 class="card-title">Card Title</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod consectetur
+                    arcu, vitae aliquet velit pellentesque ac. Nulla facilisi. Duis vel nisl tristique, mollis magna in,
+                    mattis elit. Aliquam non ante ante. </p>
+                <a class="card-link" href="#">Link 1</a>
+                <a class="card-link" href="#">Link 2</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

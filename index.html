@@ -21,7 +21,7 @@
     <!-- large image will go here -->
     <meta name="twitter:card" content="">
 
-    <link rel="icon" href="./assets/portfolio.png" type="image/icon type">
+    <link rel="icon" href="./assets/logos/portfolio.png" type="image/icon type">
     <link href="./style/style.css" type="text/css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./source/script.js" defer></script>
@@ -53,11 +53,11 @@
     </header>
 
     <main>
-
+        <!-- Start of hero section -->
         <section id="hero" class="flex p-8 justify-center items-center">
-            <div class="p-3 flex flex-col justify-center items-center">
-                <h1 class="text-5xl font-bold text-emerald-400 tracking-wide">Beatrice Schembri</h1>
-                <p class="text-3xl text-slate-50 tracking-wide mt-4 uppercase">Junior Web Developer</p>
+            <div class="p-3 flex flex-col justify-center items-center whitespace-nowrap">
+                <h1 class="text-5xl text-emerald-400 font-bold tracking-wide">Beatrice Schembri</h1>
+                <p class="text-3xl text-slate-50 uppercase tracking-wide mt-4">Junior Web Developer</p>
                 <div class="mt-10">
                     <a href="mailto:beatrice.schembri@gmail.com"
                         class="bg-amber-200 hover:bg-amber-400 text-emerald-900 font-bold py-1 px-4 mx-4 rounded-full">email</a>
@@ -66,15 +66,20 @@
                 </div>
             </div>
         </section>
+        <!-- End of hero section -->
 
+        <!-- Back to top button -->
         <button onclick="topFunction()" id="backToTopButton" title="Go to top" class="py-1 px-4 mx-4 w-20"><img
                 src="./assets/logos/up-arrow.png" alt="back to top"></button>
+        <!-- End of back to top button -->
 
+        <!-- Start of flex container for cards -->
         <div class="flex flex-col">
 
-            <section id="about" class="flex p-3 justify-center items-center">
+            <h2 id="about">About</h2>
+
+            <article id="story" class="flex p-3 justify-center items-center">
                 <div class="bg-sky-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 flex flex-col">
-                    <h2 class="uppercase font-semibold text-2xl">About</h2>
                     <p>Hi there!</p>
                     <p> I am a trainee at BeCode Gent, on my way to complete an intensive Junior Web Developer course
                         with a focus on Backend.</p>
@@ -83,66 +88,37 @@
                         that was my first brush with coding. A few years later it was time for me to learn new skills,
                         and I knew which direction to take.</p>
                 </div>
-            </section>
+            </article>
 
-            <section id="skills" class="flex p-3 justify-center items-center">
+            <h2 id="skills">Skills</h2>
+
+            <article class="flex p-3 justify-center items-center">
                 <div class="bg-sky-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 flex flex-col">
-                    <h2 class="uppercase font-semibold text-2xl">Skills</h2>
                     <ul>
-                        <li>HTML, HTML5</li>
-                        <li>CSS, Sass</li>
-                        <li>JavaScript, Node.js, Express.js</li>
-                        <li>PHP, Laravel</li>
-                        <li>Git, GitHub</li>
-                        <li>MySQL, HeidiSQL</li>
-                        <li>REST APIs</li>
-                        <li>MVC pattern</li>
+                        <li>HTML</li>
+                        <li>HTML</li>
+                        <li>HTML</li>
+                        <li>HTML</li>
+                        <li>HTML</li>
+                        <li>HTML</li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
-            <section id="projects" class="flex p-3 justify-center items-center">
-                <div class="bg-sky-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 h-full sm:h-auto flex flex-col">
-                    <h2 class="uppercase font-semibold text-2xl">Projects</h2>
+            <h2 id="projects">Projects</h2>
 
-                    <!-- <article class="flex-grow mt-10">
-                        <h3 class="uppercase font-semibold text-xl">Title</h3>
-                        <img>
-                        <a href="">link</a>
-                        <p>Description</p>
-                        <p>Languages:</p>
-                    </article> -->
-
-                    <article class="flex-grow mt-10">
-                        <h3 class="uppercase font-semibold text-xl">Book a Shiver - Laravel</h3>
-                        <img src="./assets/projects/borrow-a-shiver.png">
-                        <a href="">repo</a>
-                        <p>Database CRUD and API built with Laravel</p>
-                        <p>Languages: PHP - Laravel, HTML, CSS</p>
-                    </article>
-
-                    <article class="flex-grow mt-10">
-                        <h3 class="uppercase font-semibold text-xl">Brilliant Minds - CRUD API</h3>
-                        <img>
-                        <a href="">link</a>
-                        <p>Simple games: guessing a random number; rock-paper-scissors.</p>
-                        <p>Languages: JavaScript, HTML, CSS</p>
-                    </article>
-
-                    <article class="flex-grow mt-10">
-                        <h3 class="uppercase font-semibold text-xl">JavaScript Games</h3>
-                        <img>
-                        <a href="https://github.com/BiceSchembri/javascript-games">repo</a>
-                        <a href="https://rock-paper-scissors-gify.netlify.app/">Netlify</a>
-                        <p>Simple game of rock, paper, scissors.</p>
-                        <p>Languages: JavaScript, HTML, CSS</p>
-                    </article>
-
+            <article class="flex p-3 justify-center items-center">
+                <div class="bg-sky-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 flex flex-col">
+                    <h3 class="uppercase font-semibold text-xl">Book a Shiver - Laravel</h3>
+                    <img src="./assets/projects/borrow-a-shiver.png">
+                    <a href="">repo</a>
+                    <p>Database CRUD and API built with Laravel</p>
+                    <p>Languages: PHP - Laravel, HTML, CSS</p>
                 </div>
-            </section>
+            </article>
 
         </div>
-
+        <!-- End of flex container for cards -->
     </main>
 
     <footer class="p-2 md:p-4 bg-emerald-400">
