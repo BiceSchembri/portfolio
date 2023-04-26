@@ -33,7 +33,7 @@
 <body class="bg-slate-900 text-slate-50">
 
     <header>
-        <nav class="flex items-end justify-center md:justify-end uppercase font-bold p-2 md:p-4">
+        <nav class="flex items-end justify-center uppercase font-bold p-2 md:p-4">
             <div class="flex items-end md:justify-end ">
                 <a href="#about" class="px-4 py-2 hover:text-emerald-500 transition duration-300 ease-in-out">About</a>
                 <a href="#skills"
@@ -81,12 +81,15 @@
             <h2 id="about" class="text-2xl font-bold uppercase text-slate-50 p-3 text-center">About</h2>
 
             <article id="story" class="flex p-3 justify-center items-center">
-                <div class="bg-slate-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 flex flex-col">
+                <div class="bg-slate-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 flex flex-col leading-7">
                     <p> I am a trainee at BeCode Gent, on my way to complete an intensive Junior Web Developer course
                         with a focus on Backend.</p>
+                    <br>
                     <p>Over the last ten years I have lived in six different countries and worked in a variety of jobs,
                         from customer service to library assistant. In 2020 I was hired to translate a SaaS app -
-                        that was my first brush with coding. A few years later it was time for me to learn new skills,
+                        that was my first brush with coding.</p>
+                    <br>
+                    <p>A few years later it was time for me to learn new skills,
                         and I knew which direction to take.</p>
                 </div>
             </article>
@@ -114,61 +117,7 @@
                             alt="MySQL logo">
                     </div>
 
-                    <!-- <ul>
-                        <li>
-                            <div class="flex justify-center items-center">
-                                <img src="./assets/logos/HTML5_logo_and_wordmark.svg.png" width="20%"
-                                    alt="HTML logo"></img>
-                                <p>HTML, HTML5</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex justify-center items-center">
-
-                                <img src="./assets/logos/1452px-CSS3_logo_and_wordmark.svg.png" width="20%"
-                                    alt="CSS logo"></img>
-                                <p>CSS</p>
-                            </div>
-
-                        </li>
-                        <li>
-                            <div class="flex justify-center items-center">
-                                <img src="./assets/logos/seal-color-aef0354c.png" width="20%" alt="Sass logo"></img>
-                                <p>Sass</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex justify-center items-center">
-                                <img src="./assets/logos/javascript-logo-transparent-logo-javascript-images-3.png"
-                                    width="20%" alt="JavaScript logo"></img>
-                                <p>JavaScript (with Node.js and Express.js)</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex justify-center items-center">
-                                <img src="./assets/logos/new-php-logo.svg" width="20%" alt="PHP logo"></img>
-                                <p>PHP</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex justify-center items-center">
-                                <img src="./assets/logos/985px-Laravel.svg.png" width="20%" alt="Laravel logo"></img>
-                                <p>Laravel</p>
-                        </li>
-                        <li>
-                            <div class="flex justify-center items-center">
-                                <img src="./assets/logos/GitHub_Logo_White.png" width="20%" alt="GitHub logo"></img>
-                                <p>Git and
-                                    GitHub</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex justify-center items-center">
-                                <img src="./assets/logos/1200px-MySQL.svg.png" width="20%" alt="MySQL logo"></img>
-                                <p>MySQL</p>
-                            </div>
-                        </li>
-                    </ul> -->
+                    </ul>
                 </div>
             </article>
 
@@ -176,11 +125,20 @@
 
             <article class="flex p-3 justify-center items-center">
                 <div class="bg-slate-700 rounded-md p-3 w-full sm:w-1/2 lg:w-1/3 flex flex-col">
-                    <h3 class="uppercase font-semibold text-xl">Book a Shiver - Laravel</h3>
                     <img src="./assets/projects/borrow-a-shiver.png">
-                    <a href="">repo</a>
-                    <p>Database CRUD and API built with Laravel</p>
-                    <p>Languages: PHP - Laravel, HTML, CSS</p>
+                    <h3 class="uppercase font-semibold text-xl text-center">Book a Shiver - Laravel</h3>
+                    <a href="" class="text-emerald-400 hover:underline">GitHub repo</a>
+                    <!-- <a href="">Netlify</a> -->
+                    <p class="my-3">Database CRUD and API built with Laravel</p>
+                    <ul class="list-disc list-inside">Main features:
+                        <li>MVC structure</li>
+                        <li>CRUD flow</li>
+                        <li>Eloquent relationships</li>
+                        <li>user registration and authentication</li>
+                        <li>rights management with middlewares</li>
+                        <li>custom error handling</li>
+                        <li>Alpine library for flash messages</li>
+                    </ul>
                 </div>
             </article>
 
