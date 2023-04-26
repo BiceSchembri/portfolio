@@ -2,8 +2,20 @@
 
 A portfolio showcasing my projects to potential employers and fellow coding learners.
 
-Beatrice Schembri
-
-Trainee at [BeCode](https://becode.org/) in Ghent, Belgium.
+Beatrice Schembri - trainee at [BeCode](https://becode.org/) in Ghent, Belgium.
 
 Junior Web Developer course, Backend track (December 2022 - June 2023)
+
+---
+
+## Portfolio Page
+
+The portfolio itself is a single-page website built with HTML, Tailwind, a custom CSS file and JavaScript.
+
+The page contains links to my GitHub Pages and my LinkedIn profile, a mailto link and a link to download my CV.
+
+The projects are displayed as cards with a slideshow of screenshots and information about the main features.
+
+I have added a small script to show a "back to top" button when the user scrolls down the page.
+
+JavaScript also takes care of the photo slideshow.
