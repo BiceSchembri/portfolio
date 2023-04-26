@@ -10,7 +10,9 @@ Junior Web Developer course, Backend track (December 2022 - June 2023)
 
 ## Portfolio Page
 
+<p align="center">
 <img width="482" alt="portfolio-cover" src="https://user-images.githubusercontent.com/103190920/234611178-41ad1c9d-3bde-4f1f-9492-682fc788cd67.png">
+</p>
 
 The portfolio itself is a single-page website built with HTML, Tailwind, a custom CSS file and JavaScript.
 
