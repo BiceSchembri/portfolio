@@ -22,10 +22,9 @@ function topFunction() {
 // Picture slideshow on Projects cards
 
 let slideIndex = [1, 1, 1];
-let slideId = ['slides1', 'slides2', 'slides3'];
+let slideId = ['slides1', 'slides2'];
 showSlides(1, 0);
 showSlides(1, 1);
-showSlides(1, 2);
 
 function plusSlides(n, no) {
   showSlides((slideIndex[no] += n), no);
