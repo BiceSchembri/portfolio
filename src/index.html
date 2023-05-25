@@ -35,22 +35,22 @@
 <body class="bg-slate-900 text-slate-50">
 
     <header>
-        <nav class="flex items-end justify-center uppercase font-bold p-2 md:p-4">
+        <nav class="flex items-end justify-center p-2 font-bold uppercase md:p-4">
             <div class="flex items-end md:justify-end ">
-                <a href="#about" class="px-4 py-2 hover:text-emerald-500 transition duration-300 ease-in-out">About</a>
+                <a href="#about" class="px-4 py-2 transition duration-300 ease-in-out hover:text-emerald-500">About</a>
                 <a href="#skills"
-                    class="px-4 py-2 hover:text-emerald-500 transition duration-300 ease-in-out">Skills</a>
+                    class="px-4 py-2 transition duration-300 ease-in-out hover:text-emerald-500">Skills</a>
                 <a href="#projects"
-                    class="px-4 py-2 hover:text-emerald-500 transition duration-300 ease-in-out">Projects</a>
+                    class="px-4 py-2 transition duration-300 ease-in-out hover:text-emerald-500">Projects</a>
             </div>
             <div class="flex items-end md:justify-end ">
                 <a href="https://github.com/BiceSchembri" target="_blank" rel="noopener noreferrer"
-                    class="px-4 py-2 hover:opacity-80 transition duration-300 ease-in-out">
-                    <img alt="GitHub" src="./assets/logos/github-mark-white.png" class="w-8 h-8 object-contain">
+                    class="px-4 py-2 transition duration-300 ease-in-out hover:opacity-80">
+                    <img alt="GitHub" src="./assets/logos/github-mark-white.png" class="object-contain w-8 h-8">
                 </a>
                 <a href="https://www.linkedin.com/in/beatrice-schembri-3a0a1077/" target="_blank"
-                    rel="noopener noreferrer" class="px-4 py-2 hover:opacity-80 transition duration-300 ease-in-out">
-                    <img alt="LinkedIn" src="./assets/logos/LI-In-Bug.png" class="w-8 h-8 object-contain">
+                    rel="noopener noreferrer" class="px-4 py-2 transition duration-300 ease-in-out hover:opacity-80">
+                    <img alt="LinkedIn" src="./assets/logos/linkedin-112.png" class="object-contain w-8 h-8">
                 </a>
             </div>
         </nav>
@@ -58,15 +58,15 @@
 
     <main>
         <!-- Start of hero section -->
-        <section id="hero" class="flex p-8 justify-center items-center">
-            <div class="p-3 flex flex-col justify-center items-center whitespace-nowrap">
-                <h1 class="text-5xl text-emerald-400 font-bold tracking-wide">Beatrice Schembri</h1>
-                <p class="text-3xl text-slate-50 uppercase tracking-wide mt-4">Junior Web Developer</p>
+        <section id="hero" class="flex items-center justify-center p-8">
+            <div class="flex flex-col items-center justify-center p-3 whitespace-nowrap">
+                <h1 class="text-5xl font-bold tracking-wide text-emerald-400">Beatrice Schembri</h1>
+                <p class="mt-4 text-3xl tracking-wide uppercase text-slate-50">Junior Web Developer</p>
                 <div class="mt-10">
                     <a href="mailto:beatrice.schembri@gmail.com"
-                        class="bg-emerald-200 hover:bg-emerald-300 text-slate-800 font-bold py-1 px-4 mx-4 rounded-full">email</a>
+                        class="px-4 py-1 mx-4 font-bold rounded-full bg-emerald-200 hover:bg-emerald-300 text-slate-800">email</a>
                     <a href="./assets/CV_Beatrice-Schembri_2023.pdf" download="CV_Beatrice-Schembri"
-                        class="bg-emerald-200 hover:bg-emerald-300 text-slate-800 font-bold py-1 px-4 mx-4 rounded-full">cv</a>
+                        class="px-4 py-1 mx-4 font-bold rounded-full bg-emerald-200 hover:bg-emerald-300 text-slate-800">cv</a>
                 </div>
             </div>
         </section>
@@ -74,17 +74,17 @@
 
         <!-- Back to top button -->
         <button onclick="topFunction()" id="backToTopButton" title="Back to top"
-            class="py-1 px-4 mx-4 bg-slate-200 text-slate-900 rounded-full">back to
+            class="px-4 py-1 mx-4 rounded-full bg-slate-200 text-slate-900">back to
             top</button>
         <!-- End of back to top button -->
 
         <!-- Start of flex container for cards -->
         <div class="flex flex-col">
 
-            <h2 id="about" class="text-2xl font-bold uppercase text-slate-50 p-3 text-center">About</h2>
+            <h2 id="about" class="p-3 text-2xl font-bold text-center uppercase text-slate-50">About</h2>
 
-            <article id="story" class="flex p-3 justify-center items-center">
-                <div class="bg-slate-700 rounded-md p-8 w-full sm:w-2/3 flex flex-col leading-7">
+            <article id="story" class="flex items-center justify-center p-3">
+                <div class="flex flex-col w-full p-8 leading-7 rounded-md bg-slate-700 sm:w-2/3">
                     <p> I am a trainee at BeCode Gent, on my way to complete an intensive Junior Web Developer course
                         with a focus on Backend.</p>
                     <br>
@@ -96,11 +96,11 @@
                 </div>
             </article>
 
-            <h2 id="skills" class="text-2xl font-bold uppercase text-slate-50 p-3 text-center">Skills</h2>
+            <h2 id="skills" class="p-3 text-2xl font-bold text-center uppercase text-slate-50">Skills</h2>
 
-            <article class="flex p-3 justify-center items-center">
-                <div class="bg-slate-700 rounded-md p-8 w-full sm:w-2/3 flex flex-col leading-7">
-                    <div class="flex flex-wrap justify-center items-start space-x-5 mb-4">
+            <article class="flex items-center justify-center p-3">
+                <div class="flex flex-col w-full p-8 leading-7 rounded-md bg-slate-700 sm:w-2/3">
+                    <div class="flex flex-wrap items-start justify-center mb-4 space-x-5">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                             class="w-10" />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
@@ -122,18 +122,18 @@
                             class="w-10" />
                     </div>
 
-                    <div class="flex flex-wrap justify-center items-start">
+                    <div class="flex flex-wrap items-start justify-center">
                         <div class="items-end">
                             <section>
-                                <h3 class="font-semibold mt-2 mb-1 uppercase">Frontend</h3>
-                                <ul class="list-inside px-3">
+                                <h3 class="mt-2 mb-1 font-semibold uppercase">Frontend</h3>
+                                <ul class="px-3 list-inside">
                                     <li>HTML, CSS, JavaScript</li>
                                     <li>Sass</li>
                                 </ul>
                             </section>
                             <section>
-                                <h3 class="font-semibold mt-2 mb-1 uppercase">Backend</h3>
-                                <ul class="list-inside px-3">
+                                <h3 class="mt-2 mb-1 font-semibold uppercase">Backend</h3>
+                                <ul class="px-3 list-inside">
                                     <li>Node.js, Express.js</li>
                                     <li>PHP, Laravel</li>
                                 </ul>
@@ -141,15 +141,15 @@
                         </div>
                         <div class="items-end">
                             <section>
-                                <h3 class="font-semibold mt-2 mb-1 uppercase">Databases</h3>
-                                <ul class="list-inside px-3">
+                                <h3 class="mt-2 mb-1 font-semibold uppercase">Databases</h3>
+                                <ul class="px-3 list-inside">
                                     <li>MySQL, HeidiSQL</li>
                                     <li>MariaDB</li>
                                 </ul>
                             </section>
                             <section>
-                                <h3 class="font-semibold mt-2 mb-1 uppercase">Tools</h3>
-                                <ul class="list-inside px-3">
+                                <h3 class="mt-2 mb-1 font-semibold uppercase">Tools</h3>
+                                <ul class="px-3 list-inside">
                                     <li>VSCode</li>
                                     <li>Git Bash, GitHub</li>
                                 </ul>
@@ -159,35 +159,35 @@
                 </div>
             </article>
 
-            <h2 id="projects" class="text-2xl font-bold uppercase text-slate-50 p-3 text-center">Projects</h2>
+            <h2 id="projects" class="p-3 text-2xl font-bold text-center uppercase text-slate-50">Projects</h2>
 
-            <article class="flex p-3 justify-center items-center">
-                <div class="bg-slate-700 rounded-md p-8 w-full sm:w-2/3 flex flex-col leading-7">
+            <article class="flex items-center justify-center p-3">
+                <div class="flex flex-col w-full p-8 leading-7 rounded-md bg-slate-700 sm:w-2/3">
 
                     <!-- Start of carousel -->
                     <div class="slideshow-container">
                         <div class="slides slides1">
-                            <img src="./assets/projects/home.png" class="rounded-md h-60 w-120 object-contain">
+                            <img src="./assets/projects/home.png" class="object-contain rounded-md h-60 w-120">
                         </div>
 
                         <div class="slides slides1">
-                            <img src="./assets/projects/bookview.png" class="rounded-md h-60 w-120 object-contain">
+                            <img src="./assets/projects/bookview.png" class="object-contain rounded-md h-60 w-120">
                         </div>
 
                         <div class="slides slides1">
-                            <img src="./assets/projects/bookdetail.png" class="rounded-md h-60 w-120 object-contain">
+                            <img src="./assets/projects/bookdetail.png" class="object-contain rounded-md h-60 w-120">
                         </div>
 
                         <div class="slides slides1">
-                            <img src="./assets/projects/authorview.png" class="rounded-md h-60 w-120 object-contain">
+                            <img src="./assets/projects/authorview.png" class="object-contain rounded-md h-60 w-120">
                         </div>
 
                         <div class="slides slides1">
-                            <img src="./assets/projects/authordetail.png" class="rounded-md h-60 w-120 object-contain">
+                            <img src="./assets/projects/authordetail.png" class="object-contain rounded-md h-60 w-120">
                         </div>
 
                         <div class="slides slides1">
-                            <img src="./assets/projects/signup.png" class="rounded-md h-60 w-120 object-contain">
+                            <img src="./assets/projects/signup.png" class="object-contain rounded-md h-60 w-120">
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -195,10 +195,10 @@
                     </div>
                     <!-- End of carousel -->
 
-                    <h3 class="uppercase font-semibold text-xl text-center py-2">Shiver Down the Bookspine</h3>
-                    <div class="flex justify-center items-center gap-10">
+                    <h3 class="py-2 text-xl font-semibold text-center uppercase">Shiver Down the Bookspine</h3>
+                    <div class="flex items-center justify-center gap-10">
                         <a href="https://github.com/BiceSchembri/shiver-down-the-bookspine"
-                            class="text-emerald-400 hover:underline text-center">GitHub repo</a>
+                            class="text-center text-emerald-400 hover:underline">GitHub repo</a>
                     </div>
                     <p class="my-3">Laravel application which connects to a database to display a list of books and
                         authors.
@@ -217,19 +217,19 @@
                 </div>
             </article>
 
-            <!-- <article class="flex p-3 justify-center items-center">
-                <div class="bg-slate-700 rounded-md p-8 w-full sm:w-2/3 flex flex-col leading-7"> -->
+            <!-- <article class="flex items-center justify-center p-3">
+                <div class="flex flex-col w-full p-8 leading-7 rounded-md bg-slate-700 sm:w-2/3"> -->
 
             <!-- Start of carousel -->
             <!-- <div class="slideshow-container">
                         <div class="slides slides2">
                             <img src="./assets/projects/rock-paper-scissors.png"
-                                class="rounded-md h-60 w-120 object-contain">
+                                class="object-contain rounded-md h-60 w-120">
                         </div>
 
                         <div class="slides slides2">
                             <img src="./assets/projects/rock-paper-scissors_play.png"
-                                class="rounded-md h-60 w-120 object-contain">
+                                class="object-contain rounded-md h-60 w-120">
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -237,12 +237,12 @@
                     </div> -->
             <!-- End of carousel -->
 
-            <!-- <h3 class="uppercase font-semibold text-xl text-center py-2">Rock Paper Scissors</h3>
-                    <div class="flex justify-center items-center gap-10">
+            <!-- <h3 class="py-2 text-xl font-semibold text-center uppercase">Rock Paper Scissors</h3>
+                    <div class="flex items-center justify-center gap-10">
                         <a href="https://github.com/BiceSchembri/javascript-games"
-                            class="text-emerald-400 hover:underline text-center">GitHub repo</a>
+                            class="text-center text-emerald-400 hover:underline">GitHub repo</a>
                         <a href="https://rock-paper-scissors-gify.netlify.app/"
-                            class="text-emerald-400 hover:underline text-center">Netlify</a>
+                            class="text-center text-emerald-400 hover:underline">Netlify</a>
                     </div>
                     <p class="my-3">Simple game of rock, paper, scissors built in plain JavaScript. The user plays
                         against the computer by choosing a weapon and clicking on 'play'. The result is displayed with
@@ -259,7 +259,7 @@
         <!-- End of flex container for cards -->
     </main>
 
-    <footer class="p-2 md:p-4 text-xs text-center">
+    <footer class="p-2 text-xs text-center md:p-4">
         <p>
             &copy;
             <script>
