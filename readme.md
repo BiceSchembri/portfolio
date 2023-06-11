@@ -2,9 +2,7 @@
 
 A portfolio showcasing my projects to potential employers and fellow coding learners.
 
-Beatrice Schembri - trainee at [BeCode](https://becode.org/) in Ghent, Belgium.
-
-Junior Web Developer course, Backend track (December 2022 - June 2023)
+It was deployed on Github pages: you can view it [here](https://biceschembri.github.io/portfolio/).
 
 ---
 
@@ -23,3 +21,9 @@ The projects are displayed as cards with a slideshow of screenshots and informat
 I have added a small script to show a "back to top" button when the user scrolls down the page.
 
 JavaScript also takes care of the photo slideshow.
+
+---
+
+Beatrice Schembri - trainee at [BeCode](https://becode.org/) in Ghent, Belgium.
+
+Junior Web Developer course, Backend track (December 2022 - June 2023)
