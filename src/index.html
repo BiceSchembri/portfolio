@@ -9,7 +9,7 @@
     <!-- OpenGraph metacards for Facebook and LinkedIn -->
     <meta property="og:title" content="Portfolio - Beatrice Schembri" />
     <meta property="og:description"
-        content="Personal portfolio - Junior Web Developer. Check out my projects and get in touch." />
+        content="Personal portfolio - Junior Backend Developer. Check out my projects and get in touch." />
     <!-- add url -->
     <meta property="og:url" content="https://github.com/BiceSchembri/portfolio/blob/main/assets/portfolio-cover.png" />
     <!-- image will go here -->
@@ -18,7 +18,7 @@
     <!-- Twitter metatags -->
     <meta name="twitter:title" content="Portfolio - Beatrice Schembri">
     <meta name="twitter:description"
-        content="Personal portfolio - Junior Web Developer. Check out my projects and get in touch.">
+        content="Personal portfolio - Junior Backend Developer. Check out my projects and get in touch.">
     <!-- smaller image will go here -->
     <meta name="twitter:image" content="https://github.com/BiceSchembri/portfolio/blob/main/assets/portfolio-cover.png">
     <!-- large image will go here -->
@@ -32,16 +32,15 @@
     <title>Portfolio - Beatrice Schembri</title>
 </head>
 
-<body class="bg-slate-900 text-slate-50">
+<body class="bg-stone-50 text-zinc-800">
 
-    <header>
+    <header class="bg-stone-950">
         <nav class="flex items-end justify-center p-2 font-bold uppercase md:p-4">
-            <div class="flex items-end md:justify-end ">
-                <a href="#about" class="px-4 py-2 transition duration-300 ease-in-out hover:text-emerald-500">About</a>
-                <a href="#skills"
-                    class="px-4 py-2 transition duration-300 ease-in-out hover:text-emerald-500">Skills</a>
+            <div class="flex items-end text-yellow-100 md:justify-end">
+                <a href="#about" class="px-4 py-2 transition duration-300 ease-in-out hover:text-yellow-600">About</a>
+                <a href="#skills" class="px-4 py-2 transition duration-300 ease-in-out hover:text-yellow-600">Skills</a>
                 <a href="#projects"
-                    class="px-4 py-2 transition duration-300 ease-in-out hover:text-emerald-500">Projects</a>
+                    class="px-4 py-2 transition duration-300 ease-in-out hover:text-yellow-600">Projects</a>
             </div>
             <div class="flex items-end md:justify-end ">
                 <a href="https://github.com/BiceSchembri" target="_blank" rel="noopener noreferrer"
@@ -56,100 +55,100 @@
         </nav>
     </header>
 
-    <main>
+    <main class="flex flex-col">
         <!-- Start of hero section -->
-        <section id="hero" class="flex items-center justify-center p-8">
-            <div class="flex flex-col items-center justify-center p-3 whitespace-nowrap">
-                <h1 class="text-5xl font-bold tracking-wide text-emerald-400">Beatrice Schembri</h1>
-                <p class="mt-4 text-3xl tracking-wide uppercase text-slate-50">Junior Web Developer</p>
+        <section id="hero" class="flex flex-col items-center justify-center p-8">
+            <div
+                class="flex flex-col items-center justify-center px-3 py-6 whitespace-nowrap sm:w-11/12 md:w-4/5 lg:w-3/5 xl:w-2/5">
+                <h1 class="text-4xl font-bold tracking-wide md:text-5xl text-orange-950">Beatrice Schembri</h1>
+                <p class="mt-4 text-xl font-semibold tracking-wide uppercase md:text-2xl text-amber-600">Junior
+                    Backend
+                    Developer</p>
                 <div class="mt-10">
                     <a href="mailto:beatrice.schembri@gmail.com"
-                        class="px-4 py-1 mx-4 font-bold rounded-full bg-emerald-200 hover:bg-emerald-300 text-slate-800">email</a>
-                    <a href="./assets/CV_Beatrice-Schembri_2023.pdf" download="CV_Beatrice-Schembri"
-                        class="px-4 py-1 mx-4 font-bold rounded-full bg-emerald-200 hover:bg-emerald-300 text-slate-800">cv</a>
+                        class="px-4 py-2 mx-4 font-bold bg-yellow-500 rounded-full text-orange-950 hover:bg-amber-600">send
+                        me an
+                        email</a>
+                    <a href="../assets/CV_Beatrice-Schembri_2023.pdf" download="CV_Beatrice-Schembri"
+                        class="px-4 py-2 mx-4 font-bold bg-yellow-500 rounded-full text-orange-950 hover:bg-amber-600">download
+                        my
+                        cv</a>
                 </div>
             </div>
         </section>
+
+
         <!-- End of hero section -->
 
         <!-- Back to top button -->
         <button onclick="topFunction()" id="backToTopButton" title="Back to top"
-            class="px-4 py-1 mx-4 rounded-full bg-slate-200 text-slate-900">back to
+            class="px-4 py-1 mx-4 font-bold rounded-full bg-slate-200 text-slate-900 hover:bg-slate-400">back to
             top</button>
         <!-- End of back to top button -->
 
         <!-- Start of flex container for cards -->
         <div class="flex flex-col">
 
-            <h2 id="about" class="p-3 text-2xl font-bold text-center uppercase text-slate-50">About</h2>
-
-            <article id="story" class="flex items-center justify-center p-3">
-                <div class="flex flex-col w-full p-8 leading-7 rounded-md bg-slate-700 sm:w-2/3">
-                    <p> I am a trainee at BeCode Gent, on my way to complete an intensive Junior Web Developer course
-                        with a focus on Backend.</p>
+            <article id="about" class="flex flex-col items-center justify-center p-3 bg-orange-950">
+                <h2 class="p-3 mt-3 text-2xl font-bold text-center uppercase text-stone-100">About</h2>
+                <div class="flex flex-col w-full p-8 leading-7 text-justify rounded-md text-stone-100 sm:w-2/3">
+                    <p> I am a <strong>junior backend developer</strong> living in Belgium. In 2023 I completed a
+                        hands-on training for web developers with the <a href="https://becode.org/"
+                            class="font-bold text-amber-200 hover:underline">BeCode</a>
+                        organization. I chose the backend track because I like the logic of making things work behind
+                        the
+                        scenes - how we go from storing data, to building connections, to sharing information.</p>
                     <br>
-                    <p>Over the last ten years I have lived in six different countries and worked in a variety of jobs,
-                        from customer service to library assistant. In 2020 I was hired to translate a SaaS app - that
-                        was my first brush with coding.</p>
+                    <p>My name is Italian, but I have heard it pronounced in many different ways by now. Over the last
+                        ten years I have lived in several different countries, which meant learning new things (and new
+                        words!) almost every day. It meant changing jobs, too - from administrative assistant, to
+                        library help,
+                        to translator.</p>
                     <br>
-                    <p>A few years later it was time for me to learn new skills, and I knew which direction to take.</p>
+                    <p>My current goal is to keep diving deep into backend languages and frameworks, and move on to
+                        <strong>software development</strong>. I wish to contribute to building solutions for a fairer
+                        world, bit by bit.
+                    </p>
                 </div>
             </article>
 
-            <h2 id="skills" class="p-3 text-2xl font-bold text-center uppercase text-slate-50">Skills</h2>
 
-            <article class="flex items-center justify-center p-3">
-                <div class="flex flex-col w-full p-8 leading-7 rounded-md bg-slate-700 sm:w-2/3">
-                    <div class="flex flex-wrap items-start justify-center mb-4 space-x-5">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            class="w-10" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                            class="w-10" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            class="w-10" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-                            class="w-10" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"
-                            class="w-10" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" class="w-10" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg"
-                            class="w-10" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-                            class="w-10" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                            class="w-10" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                            class="w-10" />
-                    </div>
-
+            <article id="skills" class="flex flex-col items-center justify-center p-3">
+                <h2 class="p-3 mt-3 text-2xl font-bold text-center uppercase text-orange-950">Skills</h2>
+                <div class="flex flex-col w-full p-8 leading-7 rounded-md sm:w-2/3">
                     <div class="flex flex-wrap items-start justify-center">
                         <div class="items-end">
-                            <section>
-                                <h3 class="mt-2 mb-1 font-semibold uppercase">Frontend</h3>
-                                <ul class="px-3 list-inside">
+                            <section class="py-3">
+                                <h3 class="mb-1 font-bold tracking-wide text-center uppercase text-amber-600">Frontend
+                                </h3>
+                                <ul class="px-3 text-center list-inside">
                                     <li>HTML, CSS, JavaScript</li>
-                                    <li>Sass</li>
+                                    <li>Sass, Tailwind, Bootstrap</li>
                                 </ul>
                             </section>
-                            <section>
-                                <h3 class="mt-2 mb-1 font-semibold uppercase">Backend</h3>
-                                <ul class="px-3 list-inside">
+                            <section class="py-3">
+                                <h3 class="mb-1 font-bold tracking-wide text-center uppercase text-amber-600">Backend
+                                </h3>
+                                <ul class="px-3 text-center list-inside">
                                     <li>Node.js, Express.js</li>
                                     <li>PHP, Laravel</li>
                                 </ul>
                             </section>
                         </div>
                         <div class="items-end">
-                            <section>
-                                <h3 class="mt-2 mb-1 font-semibold uppercase">Databases</h3>
-                                <ul class="px-3 list-inside">
+                            <section class="py-3">
+                                <h3 class="mb-1 font-bold tracking-wide text-center uppercase text-amber-600">
+                                    Databases
+                                </h3>
+                                <ul class="px-3 text-center list-inside">
                                     <li>MySQL, HeidiSQL</li>
                                     <li>MariaDB</li>
                                 </ul>
                             </section>
-                            <section>
-                                <h3 class="mt-2 mb-1 font-semibold uppercase">Tools</h3>
-                                <ul class="px-3 list-inside">
+                            <section class="py-3">
+                                <h3 class="mb-1 font-bold tracking-wide text-center uppercase text-amber-600">Tools
+                                </h3>
+                                <ul class="px-3 text-center list-inside">
                                     <li>VSCode</li>
                                     <li>Git Bash, GitHub</li>
                                 </ul>
@@ -159,10 +158,10 @@
                 </div>
             </article>
 
-            <h2 id="projects" class="p-3 text-2xl font-bold text-center uppercase text-slate-50">Projects</h2>
-
-            <article class="flex items-center justify-center p-3">
-                <div class="flex flex-col w-full p-8 leading-7 rounded-md bg-slate-700 sm:w-2/3">
+            <article id="projects" class="flex flex-col items-center justify-center p-3 bg-orange-950 text-stone-100">
+                <h2 class="p-3 mt-3 text-2xl font-bold text-center uppercase text-stone-100">Projects
+                </h2>
+                <div class="flex flex-col w-full p-8 leading-7 rounded-md sm:w-2/3">
 
                     <!-- Start of carousel -->
                     <div class="slideshow-container">
@@ -195,71 +194,35 @@
                     </div>
                     <!-- End of carousel -->
 
-                    <h3 class="py-2 text-xl font-semibold text-center uppercase">Shiver Down the Bookspine</h3>
+                    <h3 class="p-2 mt-4 text-2xl font-semibold text-center uppercase">
+                        Shiver Down the
+                        Bookspine</h3>
                     <div class="flex items-center justify-center gap-10">
                         <a href="https://github.com/BiceSchembri/shiver-down-the-bookspine"
-                            class="text-center text-emerald-400 hover:underline">GitHub repo</a>
+                            class="px-4 py-1 m-2 font-bold rounded-full text-stone-100 hover:underline">see more on
+                            GitHub</a>
                     </div>
                     <p class="my-3">Laravel application which connects to a database to display a list of books and
                         authors.
                         Users can register to post comments. Items can be created and updated by the admin using forms.
                     </p>
-                    <ul class="list-disc list-inside">Main features:
-                        <li>MVC structure</li>
-                        <li>CRUD flow</li>
-                        <li>Eloquent relationships</li>
-                        <li>user registration and authentication</li>
-                        <li>rights management with middlewares</li>
-                        <li>comment section</li>
-                        <li>custom error handling</li>
-                        <li>Alpine library for flash messages</li>
-                    </ul>
+                    <div class="flex justify-center text-center align-center">
+                        <ul class="list-inside"><span class="text-xl font-bold uppercase text-stone-100">Main
+                                features</span>
+                            <li>CRUD flow</li>
+                            <li>MVC structure</li>
+                            <li>Eloquent relationships</li>
+                            <li>Authentication, access rights</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
-
-            <!-- <article class="flex items-center justify-center p-3">
-                <div class="flex flex-col w-full p-8 leading-7 rounded-md bg-slate-700 sm:w-2/3"> -->
-
-            <!-- Start of carousel -->
-            <!-- <div class="slideshow-container">
-                        <div class="slides slides2">
-                            <img src="./assets/projects/rock-paper-scissors.png"
-                                class="object-contain rounded-md h-60 w-120">
-                        </div>
-
-                        <div class="slides slides2">
-                            <img src="./assets/projects/rock-paper-scissors_play.png"
-                                class="object-contain rounded-md h-60 w-120">
-                        </div>
-
-                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                    </div> -->
-            <!-- End of carousel -->
-
-            <!-- <h3 class="py-2 text-xl font-semibold text-center uppercase">Rock Paper Scissors</h3>
-                    <div class="flex items-center justify-center gap-10">
-                        <a href="https://github.com/BiceSchembri/javascript-games"
-                            class="text-center text-emerald-400 hover:underline">GitHub repo</a>
-                        <a href="https://rock-paper-scissors-gify.netlify.app/"
-                            class="text-center text-emerald-400 hover:underline">Netlify</a>
-                    </div>
-                    <p class="my-3">Simple game of rock, paper, scissors built in plain JavaScript. The user plays
-                        against the computer by choosing a weapon and clicking on 'play'. The result is displayed with
-                        text and gifs.</p>
-                    <ul class="list-disc list-inside">Main features:
-                        <li>JavaScript events</li>
-                        <li>Dynamic elements</li>
-                        <li>Random choice</li>
-                    </ul>
-                </div>
-            </article> -->
 
         </div>
         <!-- End of flex container for cards -->
     </main>
 
-    <footer class="p-2 text-xs text-center md:p-4">
+    <footer class="p-2 text-xs text-center text-yellow-100 md:p-4 bg-stone-950">
         <p>
             &copy;
             <script>
