@@ -54,7 +54,7 @@ img {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a grey background color */
+/* On hover, change background color */
 .prev:hover, .next:hover {
   background-color: #cfcfb5;
   color: #352206;
