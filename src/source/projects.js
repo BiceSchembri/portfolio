@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: 'Tattoo E-Shop',
-    image: '',
+    image: './assets/projects/api-products.png',
     badge:
       'https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB',
     github: 'https://github.com/BiceSchembri/express-API-tattoo',
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: 'JavaScript Games',
-    image: '',
+    image: './assets/projects/rock-paper-scissors.png',
     badge:
       'https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E',
     github: 'https://github.com/BiceSchembri/javascript-games',
