@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -28,14 +28,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="../src/style/output.css" type="text/css" rel="stylesheet" />
     <link href="../src/style/style.css" type="text/css" rel="stylesheet" />
-    <script src="../src/source/backToTopButton.js" type="module" defer></script>
+    <script src="../src/source/script.js" type="module" defer></script>
     <script src="../src/source/createProjectCards.js" type="module" defer></script>
     <title>Portfolio - Beatrice Schembri</title>
 </head>
 
 <body class="bg-stone-50 text-zinc-800">
 
-    <header class="bg-stone-900">
+    <header class="sticky top-0 bg-stone-900">
         <nav class="flex items-end justify-center p-2 font-bold uppercase md:p-4">
             <div class="flex items-end text-yellow-100 md:justify-end">
                 <a href="#about" class="px-4 py-2 transition duration-300 ease-in-out hover:text-yellow-600">About</a>
@@ -56,6 +56,7 @@
     </header>
 
     <main class="flex flex-col">
+
         <!-- Start of hero section -->
         <section id="hero" class="flex flex-col items-center justify-center p-8">
             <div
@@ -76,13 +77,11 @@
                 </div>
             </div>
         </section>
-
-
         <!-- End of hero section -->
 
         <!-- Back to top button -->
-        <button onclick="topFunction()" id="backToTopButton" title="Back to top"
-            class="px-4 py-1 mx-4 font-bold rounded-full bg-slate-200 text-slate-900 hover:bg-slate-400">back to
+        <button id="backToTopButton" title="Back to top"
+            class="px-4 py-1 mx-4 font-bold bg-yellow-100 rounded-full text-stone-900 hover:bg-yellow-400">back to
             top</button>
         <!-- End of back to top button -->
 
@@ -116,11 +115,11 @@
             </section>
 
             <section id="projects"
-                class="flex flex-col items-center justify-center p-3 bg-stone-100 border-orange-950 text-orange-950">
-                <h2 class="p-3 mt-3 text-3xl font-bold text-center uppercase">Projects
+                class="flex flex-col items-center justify-center bg-stone-100 border-orange-950 text-orange-950">
+                <h2 class="p-3 py-10 text-3xl font-bold text-center uppercase">Projects
                 </h2>
                 <!-- Project cards container -->
-                <div class="flex flex-row flex-wrap justify-center gap-4" id="projectCardsContainer">
+                <div class="flex flex-row flex-wrap justify-center gap-4 mb-8" id="projectCardsContainer">
                     <!-- Cards are created dynamically with JavaScript and inserted here -->
                 </div>
                 <!-- End of project cards container -->
