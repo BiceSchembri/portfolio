@@ -1,7 +1,7 @@
 # Personal Portfolio
 
 <p align="center">
-<img width="502" alt="portfolio-cover" src="https://user-images.githubusercontent.com/103190920/234614151-ccbca6fa-d576-4707-999e-edec23b8ad5e.png">
+<img width="502" alt="portfolio-cover" src="https://github.com/BiceSchembri/portfolio/assets/103190920/a736bef3-4b5c-410d-a42c-51c0905973db">
 </p>
 
 A portfolio showcasing some of my projects.
