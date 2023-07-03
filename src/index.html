@@ -28,17 +28,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="../src/style/output.css" type="text/css" rel="stylesheet" />
     <link href="../src/style/style.css" type="text/css" rel="stylesheet" />
-    <script src="../src/source/script.js" defer></script>
+    <script src="../src/source/backToTopButton.js" type="module" defer></script>
+    <script src="../src/source/createProjectCards.js" type="module" defer></script>
     <title>Portfolio - Beatrice Schembri</title>
 </head>
 
 <body class="bg-stone-50 text-zinc-800">
 
-    <header class="bg-stone-950">
+    <header class="bg-stone-900">
         <nav class="flex items-end justify-center p-2 font-bold uppercase md:p-4">
             <div class="flex items-end text-yellow-100 md:justify-end">
                 <a href="#about" class="px-4 py-2 transition duration-300 ease-in-out hover:text-yellow-600">About</a>
-                <a href="#skills" class="px-4 py-2 transition duration-300 ease-in-out hover:text-yellow-600">Skills</a>
                 <a href="#projects"
                     class="px-4 py-2 transition duration-300 ease-in-out hover:text-yellow-600">Projects</a>
             </div>
@@ -86,143 +86,50 @@
             top</button>
         <!-- End of back to top button -->
 
-        <!-- Start of flex container for cards -->
+        <!-- Start of flex container for sections -->
         <div class="flex flex-col">
 
-            <article id="about" class="flex flex-col items-center justify-center p-3 bg-orange-950">
-                <h2 class="p-3 mt-3 text-2xl font-bold text-center uppercase text-stone-100">About</h2>
+            <section id="about" class="flex flex-col items-center justify-center p-3 bg-stone-900">
+                <h2 class="p-3 mt-3 text-3xl font-bold text-center uppercase text-stone-100">About</h2>
                 <div class="flex flex-col w-full p-8 leading-7 text-justify rounded-md text-stone-100 sm:w-2/3">
-                    <p> I am a <strong>junior backend developer</strong> living in Belgium. In 2023 I completed a
+                    <p> I am a <span class="font-semibold text-yellow-200">junior backend developer</span> living in
+                        Belgium. In 2023 I
+                        completed a
                         hands-on training for web developers with the <a href="https://becode.org/"
-                            class="font-bold text-amber-200 hover:underline">BeCode</a>
+                            class="font-bold text-yellow-200 transition duration-300 ease-in-out hover:text-yellow-600">BeCode</a>
                         organization. I chose the backend track because I like the logic of making things work behind
                         the
-                        scenes - how we go from storing data, to building connections, to sharing information.</p>
+                        scenes - storing data, building connections, sharing information.</p>
                     <br>
-                    <p>My name is Italian, but I have heard it pronounced in many different ways by now. Over the last
-                        ten years I have lived in several different countries, which meant learning new things (and new
-                        words!) almost every day. It meant changing jobs, too - from administrative assistant, to
-                        library help,
-                        to translator.</p>
+                    <p>My name is Italian, but I have heard it pronounced in so many ways by now. Over the past
+                        ten years I have lived in several different countries, which meant <span
+                            class="font-semibold text-yellow-200">learning new things</span> (and new
+                        words!) almost every day. That is when being open to communicate with people and ready to adapt
+                        came in handy.</p>
                     <br>
                     <p>My current goal is to keep diving deep into backend languages and frameworks, and move on to
-                        <strong>software development</strong>. I wish to contribute to building solutions for a fairer
+                        <span class="font-semibold text-yellow-200">software development</span>. I wish to contribute to
+                        building solutions for a fairer
                         world, bit by bit.
                     </p>
                 </div>
-            </article>
+            </section>
 
-
-            <article id="skills" class="flex flex-col items-center justify-center p-3">
-                <h2 class="p-3 mt-3 text-2xl font-bold text-center uppercase text-orange-950">Skills</h2>
-                <div class="flex flex-col w-full p-8 leading-7 rounded-md sm:w-2/3">
-                    <div class="flex flex-wrap items-start justify-center">
-                        <div class="items-end">
-                            <section class="py-3">
-                                <h3 class="mb-1 font-bold tracking-wide text-center uppercase text-amber-600">Frontend
-                                </h3>
-                                <ul class="px-3 text-center list-inside">
-                                    <li>HTML, CSS, JavaScript</li>
-                                    <li>Sass, Tailwind, Bootstrap</li>
-                                </ul>
-                            </section>
-                            <section class="py-3">
-                                <h3 class="mb-1 font-bold tracking-wide text-center uppercase text-amber-600">Backend
-                                </h3>
-                                <ul class="px-3 text-center list-inside">
-                                    <li>Node.js, Express.js</li>
-                                    <li>PHP, Laravel</li>
-                                </ul>
-                            </section>
-                        </div>
-                        <div class="items-end">
-                            <section class="py-3">
-                                <h3 class="mb-1 font-bold tracking-wide text-center uppercase text-amber-600">
-                                    Databases
-                                </h3>
-                                <ul class="px-3 text-center list-inside">
-                                    <li>MySQL, HeidiSQL</li>
-                                    <li>MariaDB</li>
-                                </ul>
-                            </section>
-                            <section class="py-3">
-                                <h3 class="mb-1 font-bold tracking-wide text-center uppercase text-amber-600">Tools
-                                </h3>
-                                <ul class="px-3 text-center list-inside">
-                                    <li>VSCode</li>
-                                    <li>Git Bash, GitHub</li>
-                                </ul>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article id="projects" class="flex flex-col items-center justify-center p-3 bg-orange-950 text-stone-100">
-                <h2 class="p-3 mt-3 text-2xl font-bold text-center uppercase text-stone-100">Projects
+            <section id="projects"
+                class="flex flex-col items-center justify-center p-3 bg-stone-100 border-orange-950 text-orange-950">
+                <h2 class="p-3 mt-3 text-3xl font-bold text-center uppercase">Projects
                 </h2>
-                <div class="flex flex-col w-full p-8 leading-7 rounded-md sm:w-2/3">
-
-                    <!-- Start of carousel -->
-                    <div class="slideshow-container">
-                        <div class="slides slides1">
-                            <img src="./assets/projects/home.png" class="object-contain rounded-md h-60 w-120">
-                        </div>
-
-                        <div class="slides slides1">
-                            <img src="./assets/projects/bookview.png" class="object-contain rounded-md h-60 w-120">
-                        </div>
-
-                        <div class="slides slides1">
-                            <img src="./assets/projects/bookdetail.png" class="object-contain rounded-md h-60 w-120">
-                        </div>
-
-                        <div class="slides slides1">
-                            <img src="./assets/projects/authorview.png" class="object-contain rounded-md h-60 w-120">
-                        </div>
-
-                        <div class="slides slides1">
-                            <img src="./assets/projects/authordetail.png" class="object-contain rounded-md h-60 w-120">
-                        </div>
-
-                        <div class="slides slides1">
-                            <img src="./assets/projects/signup.png" class="object-contain rounded-md h-60 w-120">
-                        </div>
-
-                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                    </div>
-                    <!-- End of carousel -->
-
-                    <h3 class="p-2 mt-4 text-2xl font-semibold text-center uppercase">
-                        Shiver Down the
-                        Bookspine</h3>
-                    <div class="flex items-center justify-center gap-10">
-                        <a href="https://github.com/BiceSchembri/shiver-down-the-bookspine"
-                            class="px-4 py-1 m-2 font-bold rounded-full text-stone-100 hover:underline">see more on
-                            GitHub</a>
-                    </div>
-                    <p class="my-3">Laravel application which connects to a database to display a list of books and
-                        authors.
-                        Users can register to post comments. Items can be created and updated by the admin using forms.
-                    </p>
-                    <div class="flex justify-center text-center align-center">
-                        <ul class="list-inside"><span class="text-xl font-bold uppercase text-stone-100">Main
-                                features</span>
-                            <li>CRUD flow</li>
-                            <li>MVC structure</li>
-                            <li>Eloquent relationships</li>
-                            <li>Authentication, access rights</li>
-                        </ul>
-                    </div>
+                <!-- Project cards container -->
+                <div class="flex flex-row flex-wrap justify-center gap-4" id="projectCardsContainer">
+                    <!-- Cards are created dynamically with JavaScript and inserted here -->
                 </div>
-            </article>
-
+                <!-- End of project cards container -->
+            </section>
         </div>
-        <!-- End of flex container for cards -->
+        <!-- End of flex container for sections -->
     </main>
 
-    <footer class="p-2 text-xs text-center text-yellow-100 md:p-4 bg-stone-950">
+    <footer class="p-2 text-xs text-center text-yellow-100 md:p-4 bg-stone-900">
         <p>
             &copy;
             <script>
