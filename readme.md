@@ -6,7 +6,7 @@
 
 A portfolio showcasing some of my projects.
 
-It was deployed on Github pages: you can view it [here](https://biceschembri.github.io/portfolio/).
+It was deployed on Netlify: you can view it [here](https://64a32a9250d4bf4ef47df788--beatrice-schembri-portfolio.netlify.app/).
 
 ---
 
