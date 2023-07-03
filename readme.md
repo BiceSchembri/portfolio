@@ -1,6 +1,10 @@
-# My Personal Portfolio
+# Personal Portfolio
 
-A portfolio showcasing my projects to potential employers and fellow coding learners.
+<p align="center">
+<img width="502" alt="portfolio-cover" src="https://user-images.githubusercontent.com/103190920/234614151-ccbca6fa-d576-4707-999e-edec23b8ad5e.png">
+</p>
+
+A portfolio showcasing some of my projects.
 
 It was deployed on Github pages: you can view it [here](https://biceschembri.github.io/portfolio/).
 
@@ -8,22 +12,22 @@ It was deployed on Github pages: you can view it [here](https://biceschembri.git
 
 ## Portfolio Page
 
-<p align="center">
-<img width="502" alt="portfolio-cover" src="https://user-images.githubusercontent.com/103190920/234614151-ccbca6fa-d576-4707-999e-edec23b8ad5e.png">
-</p>
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-The portfolio itself is a single-page website built with HTML, Tailwind, a custom CSS file and JavaScript.
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-The page contains links to my GitHub Pages and my LinkedIn profile, a mailto link and a link to download my CV.
+The portfolio itself is a single-page website built with HTML, Tailwind, some custom CSS and JavaScript.
 
-The projects are displayed as cards with a slideshow of screenshots and information about the main features.
+The page contains links to my **Github Pages** and my **LinkedIn profile**, a `mailto` link and a link to download my CV.
+
+The projects are displayed as cards with a cover image and information about the main features. The cards are created dynamically with JavaScript from an array of objects.
 
 I have added a small script to show a "back to top" button when the user scrolls down the page.
 
-JavaScript also takes care of the photo slideshow.
-
 ---
 
-Beatrice Schembri - trainee at [BeCode](https://becode.org/) in Ghent, Belgium.
+Beatrice Schembri
 
-Junior Web Developer course, Backend track (December 2022 - June 2023)
+Trained at [BeCode](https://becode.org/)
+
+Junior Developer course, Backend track (December 2022 - June 2023)
